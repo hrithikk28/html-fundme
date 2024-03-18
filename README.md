@@ -24,7 +24,7 @@ Confused? You can run `git checkout nodejs-edition` if you'd like to see this wi
 1. Clone the repo
 
 ```
-git clone
+git clone https://github.com/hrithikk28/html-fundme
 cd html-fundme
 ```
 
