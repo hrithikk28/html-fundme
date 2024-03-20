@@ -14,7 +14,7 @@ console.log(ethers);
 async function connect() {
   if (typeof window.ethereum !== "undefined") {
     try {
-      await ethereum.request({ method: "eth_requestAccounts" });
+      await ethereum.request({ method: "eth_requestAccounts" }); // the ethereum.request method to ask MetaMask to request access to the user's Ethereum accounts
     } catch (error) {
       console.log(error);
     }
@@ -36,7 +36,7 @@ async function fund() {
     // contract that we are interacting with\
     // ABI and address of contract
 
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
+    const provider = new ethers.providers.Web3Provider(window.ethereum); // This line creates a new instance of the Web3Provider from the ethers.js library, using the window.ethereum object as the provider. This provider is used to connect to the Ethereum blockchain
     const signer = provider.getSigner();
     console.log(signer);
 
